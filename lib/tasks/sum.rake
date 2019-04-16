@@ -17,4 +17,17 @@ task :sum do
   #  - for each number in the set,
   #    - we add it to the running total
   #  - after we've looked at every number, the running total is the sum
+  
+  #initialize total to be 0
+  total = 0
+  
+  numbers.each do |element|
+    total = total + element
+  end
+  
+  ap("Your numbers:")
+  ap(numbers)
+  
+  ap("Sum: " + total.to_s)
+  
 end

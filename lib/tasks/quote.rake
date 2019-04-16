@@ -55,4 +55,13 @@ task :quote do
   # Your code goes below.
   # =====================================================================
 
+  # this returns a random hash
+  rand_quote_hash = quotations.sample
+  
+  # we need to extract the quote and citation, and put into a string to print
+  rand_quote = rand_quote_hash[:quote] + " -- " + rand_quote_hash[:citation]
+  
+  #ap stands for awesome print, which simply prints items
+  ap(rand_quote)
+
 end

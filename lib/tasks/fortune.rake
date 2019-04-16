@@ -12,4 +12,8 @@ task :fortune do
   # Your code goes below.
   # =====================================================================
 
+  rand_fortune = fortunes.sample
+
+  ap(rand_fortune)
+  
 end

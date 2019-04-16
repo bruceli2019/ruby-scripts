@@ -9,7 +9,7 @@ task :maximum do
   # The numbers from the file are in the array `numbers`.
   # =====================================================================
 
-  # MINIMUM
+  # Maximum
   # =======
 
   # Yes, we realize that we could just use .max, but don't; instead, practice using .each to solve this problem.
@@ -22,5 +22,20 @@ task :maximum do
   #      - I replace the previous max with it.
   #    - If not, I do nothing and go to the next element.
   #  - After we've looked at every element, what we're left with should be the real maximum
+  
+  max_element = numbers[0]
+  
+  numbers.each do |element|
+    # if the minimum is greater than the next element, we use element as new minimum
+    if max_element < element
+      max_element = element
+    end
+  end
+  
+  ap("Your numbers:")
+  ap(numbers)
+  # print this, convert to string
+  ap("Maximum: " + max_element.to_s)
+  
 
 end

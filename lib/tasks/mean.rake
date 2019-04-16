@@ -15,5 +15,16 @@ task :mean do
   # To find the mean (or average) of a set,
   #  - we sum up all the elements
   #  - then we divide the sum by the number of elements in the set
-
+  
+  # .to_f to make sure we get float division
+  sum_of_all = numbers.sum.to_f
+  
+  num_elements = numbers.count.to_f
+  
+  average = sum_of_all / num_elements
+  
+  ap("Your numbers:")
+  ap(numbers)
+  ap("Mean: " + average.to_s)
+  
 end

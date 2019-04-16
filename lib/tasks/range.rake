@@ -16,4 +16,15 @@ task :range do
   #  - Find the maximum
   #  - Find the minimum
   #  - Subtract the latter from the former
+  
+  min_of_array = numbers.min
+  max_of_array = numbers.max
+  
+  range = max_of_array - min_of_array
+  
+  ap("Your numbers:")
+  ap(numbers)
+  
+  ap("Range: " + range.to_s)
+  
 end
